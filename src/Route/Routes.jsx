@@ -13,7 +13,7 @@ export const router=createBrowserRouter([
             },
             {
                 path:'/plant',
-                element:<div>this is plant section</div>
+                element:<div className="mt-15">this is plant section</div>
             },
             {
                 path:'profile',
