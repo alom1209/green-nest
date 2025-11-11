@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Home from "../Pages/Home";
 import Homelayout from "../layout/Homelayout";
+import Allplants from "../Components/Allplants";
 
 export const router=createBrowserRouter([
     {
@@ -13,7 +14,7 @@ export const router=createBrowserRouter([
             },
             {
                 path:'/plant',
-                element:<div className="mt-15">this is plant section</div>
+                element:<Allplants></Allplants>
             },
             {
                 path:'profile',
