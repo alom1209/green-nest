@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router';
 
 const Indoorplants = ({plant}) => {
     
     return (
-         <div className="card bg-base-100  shadow-sm">
+         <div className="card bg-base-100  shadow-sm transform transition hover:scale-105 cursor-pointer">
   <figure>
     <img
       src={plant.image}
@@ -17,7 +18,7 @@ const Indoorplants = ({plant}) => {
         <p className='font-medium text-[15px]'>Rating: {plant.rating}</p>
     </div>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">View Details</button>
+      <Link className="btn btn-primary" to={`/plants/${plant.plantId}`}>View Details</Link>
     </div>
   </div>
 </div>

@@ -3,19 +3,23 @@ import HeroSection from '../Components/HeroSection';
 import Homecontent from '../Components/Homecontent';
 import Loading from './Loading';
 import PlantCareTips from '../Components/PlantCareTips';
+import Expert from '../Components/Expert';
 
 const Home = () => {
     
     return (
         <div>
            <HeroSection></HeroSection>
-           <div>
+           <section>
             <Homecontent></Homecontent>
-           </div>
-           <div className='my-4
+           </section>
+           <section className='my-4
            '>
             <PlantCareTips></PlantCareTips>
-           </div>
+           </section>
+           <section className='my-4'>
+            <Expert></Expert>
+           </section>
         </div>
     );
 };

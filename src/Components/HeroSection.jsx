@@ -8,15 +8,15 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 const HeroSection = () => {
   const slides = [
     {
-      image: "https://i.postimg.cc/qM4rR8fL/snake-plant.jpg",
+      image: "https://i.ibb.co.com/GfjSKwtM/20.jpg",
       text: "Bring Nature Home 🌿",
     },
     {
-      image: "https://i.postimg.cc/JnQ4j9dT/monstera.jpg",
+      image: "https://i.ibb.co.com/GfjSKwtM/20.jpg",
       text: "Fresh Air, Green Care 🌱",
     },
     {
-      image: "https://i.postimg.cc/K8fyqNqJ/succulent.jpg",
+      image: "https://i.ibb.co.com/GfjSKwtM/20.jpg",
       text: "Grow Happiness, Grow Plants 🌸",
     },
   ];
@@ -42,10 +42,10 @@ const HeroSection = () => {
       backgroundPosition: "center",
     }}
   >
-    {/* Overlay */}
+    
     <div className="absolute inset-0 bg-green-600 bg-opacity-40"></div>
 
-    {/* Centered Text */}
+    
     <div className="relative text-center px-4 md:px-10 flex flex-col justify-center h-full">
       <h2 className="text-white text-xl sm:text-3xl md:text-5xl font-semibold mb-3 drop-shadow-lg">
         {slide.text}

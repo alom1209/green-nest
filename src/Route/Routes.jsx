@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Home from "../Pages/Home";
 import Homelayout from "../layout/Homelayout";
 import Allplants from "../Components/Allplants";
+import PlantDetails from "../Pages/PlantDetails";
 
 export const router=createBrowserRouter([
     {
@@ -19,6 +20,10 @@ export const router=createBrowserRouter([
             {
                 path:'profile',
                 element:<div>this is profile section</div>
+            },
+            {
+                path:'/plants/:id',
+                element:<PlantDetails></PlantDetails>
             }
         ]
     },
