@@ -14,7 +14,7 @@ const Indoorplants = ({plant}) => {
   <div className="card-body">
     <h2 className="card-title">{plant.plantName}</h2>
     <div className='flex flex-col gap-2'>
-        <p className='font-medium text-[15px]'>Price: {plant.price}</p>
+        <p className='font-medium text-[15px]'>Price:${plant.price}</p>
         <p className='font-medium text-[15px]'>Rating: {plant.rating}</p>
     </div>
     <div className="card-actions justify-end">

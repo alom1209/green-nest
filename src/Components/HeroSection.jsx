@@ -8,15 +8,17 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 const HeroSection = () => {
   const slides = [
     {
-      image: "https://i.ibb.co.com/GfjSKwtM/20.jpg",
+      image: "https://images.unsplash.com/photo-1633849858928-5075d9373449?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kb29yJTIwcGxhbnRzJTIwYmFja2dyb3VuZCUyMGdyZWVufGVufDB8fDB8fHww",
       text: "Bring Nature Home 🌿",
     },
     {
-      image: "https://i.ibb.co.com/GfjSKwtM/20.jpg",
+      image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+,
       text: "Fresh Air, Green Care 🌱",
     },
     {
-      image: "https://i.ibb.co.com/GfjSKwtM/20.jpg",
+      image: "https://images.unsplash.com/photo-1616627563513-2b5b1b2b1e46"
+,
       text: "Grow Happiness, Grow Plants 🌸",
     },
   ];
@@ -24,7 +26,7 @@ const HeroSection = () => {
   return (
     <div className="w-full h-[60vh] md:h-[80vh] lg:h-[90vh]">
       <Swiper
-        spaceBetween={20}
+        spaceBetween={30}
         centeredSlides={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}

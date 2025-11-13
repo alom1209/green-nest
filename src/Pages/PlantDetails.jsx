@@ -61,7 +61,7 @@ const handleBooking=(e)=>{
       </p>
        <p className='font-semibold mt-3
      '>
-      Price: {plant.price}$
+      Price:${plant.price}
      </p>
        <p className='font-semibold mt-3
      '>
