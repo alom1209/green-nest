@@ -7,6 +7,7 @@ import Authlayout from "../layout/Authlayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Privateroute from "../Components/Privateroute";
+import Profile from "../Components/Profile";
 
 export const router=createBrowserRouter([
     {
@@ -23,7 +24,7 @@ export const router=createBrowserRouter([
             },
             {
                 path:'profile',
-                element:<div>this is profile section</div>
+                element:<Privateroute><Profile></Profile></Privateroute>
             },
             {
                 path:'/plants/:id',
