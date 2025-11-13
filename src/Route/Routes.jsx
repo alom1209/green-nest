@@ -3,6 +3,10 @@ import Home from "../Pages/Home";
 import Homelayout from "../layout/Homelayout";
 import Allplants from "../Components/Allplants";
 import PlantDetails from "../Pages/PlantDetails";
+import Authlayout from "../layout/Authlayout";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
+import Privateroute from "../Components/Privateroute";
 
 export const router=createBrowserRouter([
     {
@@ -23,12 +27,24 @@ export const router=createBrowserRouter([
             },
             {
                 path:'/plants/:id',
-                element:<PlantDetails></PlantDetails>
+                element:(<Privateroute>
+                    <PlantDetails></PlantDetails>
+                </Privateroute>)
             }
         ]
     },
     {
-        path:'/about',
-        element:<div>this is about section</div>
+        path:'/auth',
+        element:<Authlayout></Authlayout>,
+        children:[
+            {
+               path:'/auth/login',
+                element:<Login></Login>
+            },
+            {
+                path:'/auth/register',
+                element:<Register></Register>
+            }
+        ]
     }
 ])
