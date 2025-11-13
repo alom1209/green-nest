@@ -33,7 +33,7 @@ const topRatedPlants=[...plants].sort((a,b)=>b.rating-a.rating).slice(0,6)
     return (
         <div>
             <div className='text-center mt-4'>
-                <h2 className='font-semibold text-xl '>Top Rated Plants</h2>
+                <h2 className='font-semibold text-xl '>Top Rated Indoor Plants</h2>
             </div>
              <div className='w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-3 mt-3'>
             {

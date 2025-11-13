@@ -8,16 +8,16 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 const HeroSection = () => {
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1633849858928-5075d9373449?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kb29yJTIwcGxhbnRzJTIwYmFja2dyb3VuZCUyMGdyZWVufGVufDB8fDB8fHww",
+      image: "https://images.unsplash.com/photo-1612366211377-357e2bc523cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kb29yJTIwcGxhbnRzJTIwaG9tZSUyMGRlY29yfGVufDB8fDB8fHww",
       text: "Bring Nature Home 🌿",
     },
     {
-      image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+      image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80"
 ,
       text: "Fresh Air, Green Care 🌱",
     },
     {
-      image: "https://images.unsplash.com/photo-1616627563513-2b5b1b2b1e46"
+      image: "https://plus.unsplash.com/premium_photo-1673969608223-4e9bce1e700c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kb29yJTIwcGxhbnRzfGVufDB8fDB8fHww"
 ,
       text: "Grow Happiness, Grow Plants 🌸",
     },
@@ -45,14 +45,14 @@ const HeroSection = () => {
     }}
   >
     
-    <div className="absolute inset-0 bg-green-600 bg-opacity-40"></div>
+    <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 via-green-700/40 to-transparent"></div>
 
     
     <div className="relative text-center px-4 md:px-10 flex flex-col justify-center h-full">
       <h2 className="text-white text-xl sm:text-3xl md:text-5xl font-semibold mb-3 drop-shadow-lg">
         {slide.text}
       </h2>
-      <p className="text-gray-200 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+      <p className="text-gray-100 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
        Indoor plants for cleaner air & a brighter home
       </p>
     </div>

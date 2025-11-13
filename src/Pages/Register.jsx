@@ -25,12 +25,12 @@ const Register = () => {
     }
     if (!/[A-Z]/.test(password)) {
       setError("Password must contain at least one uppercase letter.");
-      toast.error(error)
+      toast.error(`${error}`)
       return;
     }
     if (!/[a-z]/.test(password)) {
       setError("Password must contain at least one lowercase letter.");
-      toast.error(error)
+      toast.error(`${error}`)
       return;
     }
        createUser(email,password)
