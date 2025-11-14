@@ -62,7 +62,7 @@ const Login = () => {
     }
     return (
     <div className="flex justify-center items-center min-h-screen  p-4">
-      <div className="card bg-white w-full max-w-sm shadow-lg rounded-lg p-6">
+      <div className="card w-full max-w-sm shadow-lg rounded-lg p-6">
         <h2 className="text-2xl font-bold text-center mb-4">Login to Your Account</h2>
         <form onSubmit={handleLogIn} className="space-y-4">
           {!editing ? (

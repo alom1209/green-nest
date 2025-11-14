@@ -24,6 +24,7 @@ const Profile = () => {
         photoURL: photo || user.photoURL});
         setName('')
         setPhoto('')
+        
         setEditing(false)
         toast.success("✅ Profile updated successfully!");
       })
